@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Pengirim Email</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- <div class="container"> -->
+    <div class="container-box">
+        
+        
+		<div class="">
+            <div class="row ">
+                <div class="col-lg-">
+                    <img class="logo" src="https://ticket.jsn.net.id/scp/logo.php?1637022990" alt="logo jsn">
+                </div>
+                <div class="col-lg"><br>
+                    <h2 style="font-weight: bold;">Email Komplain Generator</h3>
+                    <small style="color: #47a386; font-weight: bold;">Template email komplain Provider PT. Jaringanku Sarana Nusantara</small>
+                </div>
+            </div><hr>
+			<!-- <div class="page-header judul">
+                <img class="logo" src="https://ticket.jsn.net.id/scp/logo.php?1637022990" alt="logo jsn">
+                <h3 style="font-weight: bold;">Email Komplain Generator</h3>
+                <small style="color: #47a386; font-weight: bold;">Template email komplain Provider PT. Jaringanku Sarana Nusantara</small>
+			</div><br> -->
+			<form action="" method="post">
+                <!-- Provider MetroE -->
+                <div class="form-group">
+                    <label><b>Email Tujuan</b></label>
+                    <select name="" id="level1" class="form-control" onchange="headerEmail();" required></select>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-lg">
+                        <!-- Daerah Region -->
+                        <div class="form-group">
+                            <label for=""><b>Daerah Koordinasi</b></label>
+                            <select name="" id="level2" class="form-control"></select>
+                        </div>
+                    </div>
+                    <div class="form-group col-lg">
+                        <!-- Daerah CID -->
+                        <div class="form-group">
+                            <label for=""><b>Lokasi</b></label>
+                            <select name="" id="level3" class="form-control"></select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-lg">
+                        <label for=""><b>Circuit ID</b></label>
+                        <select name="" id="level4" class="form-control"></select>
+                    </div>
+
+                    <div class="form-group col-lg">
+                        <label for=""><b>Site</b></label>
+                        <select name="" id="level5" class="form-control"></select>
+                    </div>
+                    <div class="form-group col-lg">
+                        <label for=""><b>Capacity</b></label>
+                        <select name="" id="level6" class="form-control"></select>
+                    </div>
+                </div>
+                <select style="display: none;" name="" id="level7"></select>
+                <select style="display: none;" name="" id="level8"></select>
+
+                 <!-- Metro Issue (Dependent Baru)-->
+                 <div class="form-group">
+                    <label for=""><b>Metro Issue</b></label>
+                    <select name="" id="issueMetro" class="form-control" onchange="metroIssue();" >
+                        <option value=" *(belum memilih keluhan)* ">- Metro Issue -</option>
+                        <option value="DOWN">Down</option>
+                        <option value="INTERMITTENT">Intermittent</option>
+                        <option value="HIGH LATENCY">High Latency</option>
+                        <option value="UP & DOWN">Up & Down</option>
+                        <option value="BANDWIDTH LIMITED">Bandwidth Limited</option>
+                    </select>
+                </div>
+                <!-- Metro Issue (Dependent Baru)-->
+                <div class="form-group">
+                    <label for=""><b>Pengirim</b></label>
+                    <select name="" id="pengirim" class="form-control">
+                        <option value="- Belum Dipilih -">- NOC -</option>
+                        <option value="Yuan Irawan">Yuan Irawan</option>
+                        <option value="Fahmi Aziz">Fahmi Aziz</option>
+                        <option value="Bagas Alwiyantoro">Bagas Alwiyantoro</option>
+                        <option value="Aris Budiono">Aris Budiono</option>
+                        <option value="Soni Puput Nugroho">Soni Puput Nugroho</option>
+                        <option value="Mustamid Nur">Mustamid Nur</option>
+                    </select>
+                </div>
+                <br>
+
+                <!-- Tombol Kirim email -->
+            <div class="">
+                <!-- <input type="submit" name="Kirim" value="Kirim Pesan" class="btn btn-primary"> -->
+                <!-- <button class="" id="open">Generate Email</button> -->
+            </div>
+
+          </form>
+          <button class="" id="open" onclick="isiEmailTujuan();ttd(); site(); capacity(); cid();">Generate Email</button>
+
+
+          <small class="copyright">
+            Copyright © 2021 <a href="https://www.jsn.net.id/">PT Jaringanku Sarana Nusantara</a> All Rights Reserved.
+          </small>
+        </div>
+
+    </div>
+    
+
+
+
+    <div id="modal_container" class="modal-container">
+        <!-- isi container -->
+        <div class="modal-popup">
+            <div class="order-bottom p-3 text-center">
+                <h2 style="font-weight: bold;">Generated Email</h2>
+            </div>
+            <!-- Email Tujuan -->
+            <div class="row">
+                <!-- Alamat email tujuan -->
+                <div class="col-lg">
+                    <p><strong>email tujuan</strong></p>
+                </div>
+                <!-- The text field -->
+                <div class="col-lg-8">
+                    <input type="text" placeholder="masukan email tujuan" value="" id="copyText">
+                </div>
+                <div class="col-lg">
+                <!-- The button used to copy the text -->
+                <button class="copyButton" id="copyBtn"> 
+                    <i class="far fa-copy"></i> Copy
+                </button>
+                </div>
+            </div>
+            <!-- CC Email Provider -->
+            <div class="row">
+                <!-- Alamat email tujuan -->
+                <div class="col-lg">
+                    <p><strong>cc email</strong></p>
+                </div>
+                <!-- The text field -->
+                <div class="col-lg-8">
+                    <input type="text" placeholder="masukan cc email" value="" id="copyText2">
+                </div>
+                <div class="col-lg">
+                <!-- The button used to copy the text -->
+                <button class="copyButton" id="copyBtn2">
+                     <i class="far fa-copy"></i> Copy
+                </button>
+                </div>
+            </div>
+            <!-- Subject Email -->
+            <div class="row">
+                <!-- Alamat email tujuan -->
+                <div class="col-lg">
+                    <p><strong>Subject</strong></p>
+                </div>
+                <!-- The text field -->
+                <div class="col-lg-8">
+                    <input type="text" placeholder="tuliskan subject email" value="" id="copyText3">
+                </div>
+                <div class="col-lg">
+                <!-- The button used to copy the text -->
+                <button class="copyButton" id="copyBtn3">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+                </div>
+            </div>
+            
+            <hr>
+
+           <!-- Isi Email -->
+            <div id="contentEmail" class="isiEmail">
+
+                <p>Dengan Hormat <span id="provider"></span>,</p>
+                <br>
+                <p>Mohon bantuan pengecekan untuk link Metro-E dengan data sebagai berikut :</p>
+                <br>
+                <table style="border: hidden">
+                    <tr>
+                        <td>Customer Name</td>
+                        <td> : </td>
+                        <td>PT. Jaringanku Sarana Nusantara</td>
+                    </tr>
+                    <tr>
+                        <td>Circuit ID</td>
+                        <td> : </td>
+                        <td id="cid"><i>-Belum diisi-</i></td>
+                    </tr>
+                    <tr>
+                        <td>Site</td>
+                        <td> : </td>
+                        <td id="site"><i>-Belum diisi-</i></td>
+                    </tr>
+                    <tr>
+                        <td>Capacity</td>
+                        <td> : </td>
+                        <td id="kapasitas"><i>-Belum diisi-</i></td>
+                    </tr>
+                    <tr>
+                        <td>Keluhan</td>
+                        <td> : </td>
+                        <td id="keluhan"><i>-Belum diisi-</i></td>
+                    </tr>
+                </table>
+
+                <br>
+                <p>Berikut kami lampirkan juga capture latency dan graph smokeping-nya</p>
+                <br>
+                <p>Demikian informasi yang dapat kami sampaikan. Atas perhatian dan kerjasamanya kami ucapkan Terimakasih.</p>
+                <br>
+                <p>Hormat Kami,</p>
+
+                <!-- Signature NOC -->
+                <div >
+                    <p><b id="signature">-Belum diisi-</b></p>
+
+                    <p style="margin: 0px;">NOC | Support</p>
+
+                    <a href="http://www.jsn.net.id/" rel="nofollow" target="_blank"><img style="padding: 5px 0 5px 10px; width: auto; height: 48px;" src="https://res.cloudinary.com/unifyid/image/upload/v1634988574/Logo%20JSN/Logo_email_jsn_qfojk2.png" /></a>
+                    
+                    <p style="margin: 0px;">
+                        <span>PT. JARINGANKU SARANA NUSANTARA <sup>&reg;</sup></span> <br />
+                        <span style="font-size: 8pt;">Jl. Mr. Iskandar No.65E, Blaru, Pati, Jawa Tengah 59114</span>
+                    </p>
+
+                    <p style="margin: 0px;">Email : <em><span style="color: #336699;"><a href="mailto:noc@jsn.net.id" rel="nofollow" style="color: #336699; text-decoration: none;" target="_blank">noc@jsn.net.id</a></span> | <a href="http://www.jsn.net.id/" rel="nofollow" style="text-decoration: none; color: #336699;" target="_blank">www.jsn.net.id</a></em>
+                    </p>
+                </div>
+        </div>
+        <!-- Isi Email Close -->
+            
+
+        <hr>
+        <button id="close" class="">CLOSE</button>
+
+        </div>
+
+
+    </div>
+
+          <script src="js/betterdd.js"></script>
+          <script src="js/button.js"></script>
+          <script src="js/filter.js"></script>
+          <!-- <script src="copy.js"></script> -->
+
+          
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+        <script>
+            const copyBtn = document.getElementById('copyBtn');
+            const copyBtn2 = document.getElementById('copyBtn2');
+            const copyBtn3 = document.getElementById('copyBtn3');
+            const copyText = document.getElementById('copyText');
+            const copyText2 = document.getElementById('copyText2');
+            const copyText3 = document.getElementById('copyText3');
+            
+            copyBtn.onclick = () => {
+                copyText.select();    // Selects the text inside the input
+                document.execCommand('copy');    // Simply copies the selected text to clipboard 
+                 Swal.fire({         //displays a pop up with sweetalert
+                    icon: 'success',
+                    title: 'Text copied to clipboard',
+                    showConfirmButton: false,
+                    timer: 1000
+                });
+            }
+
+            copyBtn2.onclick = () => {
+                copyText2.select();    // Selects the text inside the input
+                document.execCommand('copy');    // Simply copies the selected text to clipboard 
+                 Swal.fire({         //displays a pop up with sweetalert
+                    icon: 'success',
+                    title: 'Text copied to clipboard',
+                    showConfirmButton: false,
+                    timer: 1000
+                });
+            }
+
+            copyBtn3.onclick = () => {
+                copyText3.select();    // Selects the text inside the input
+                document.execCommand('copy');    // Simply copies the selected text to clipboard 
+                 Swal.fire({         //displays a pop up with sweetalert
+                    icon: 'success',
+                    title: 'Text copied to clipboard',
+                    showConfirmButton: false,
+                    timer: 1000
+                });
+            }
+        </script>
+          
+</body>
+</html>
