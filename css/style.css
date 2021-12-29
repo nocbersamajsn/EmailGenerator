@@ -1,0 +1,32 @@
+
+.modal-body input {
+    width: 500px;
+    height: 35px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 3px 2px;
+    padding: 0 10px;
+    border-radius: 10px;
+    font-size: 11pt;
+    opacity: 0.7;
+}
+
+.modal-body input::placeholder {
+    font-style: italic;
+    opacity: 0.7;
+    font-weight: lighter;
+}
+
+.modal-body button {
+    text-align: center;
+}
+.modal-body td {
+    padding: 1px 25px 1px 0;
+    font-size: 11pt;
+}
+.modal-body p {
+    font-size: 11pt;
+}
+
+select:optional {
+    padding-left: 20px;
+}
