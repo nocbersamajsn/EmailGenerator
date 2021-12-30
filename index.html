@@ -98,13 +98,23 @@
           <hr>
           <div class="col-md-6"></div>
           <div class="col-md-3 text-center">
-            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="isiEmailTujuan();ttd(); site(); capacity(); cid(); headerEmail();">
-              <i class="fas fa-edit shadow"></i>   Generate
+            <!-- btn Generate -->
+            <button id="btnGenerate" type="button" class="btn btn-success shadow" onclick="generateEmail(); generateProses();">
+              <i class="fas fa-edit"></i>   Generate
             </button>
+            <!-- btn Loading -->
+            <button id="btnLoading" class="btn btn-success" type="button" disabled>
+              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+              Loading...
+            </button>
+            <button type="button" id="btnModal" class="visually-hidden" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></button>
+          </div>
+          
           </div>
           <div class="col-md-3">
             <button class="btn btn-danger" onClick="window.location.reload();">
-              <i class="far fa-trash-alt shadow"></i>    Clear
+              <i class="far fa-trash-alt shadow"></i>
+              <span class="ps-2">Clear</span>
             </button>
           </div>
         </form>
