@@ -120,5 +120,67 @@ function isiEmailTujuan() {
     }
 }
 
-// set email koordinator & pic
+// pemanggil generate
+function generateEmail() {
+    isiEmailTujuan();
+    ttd(); 
+    site(); 
+    capacity(); 
+    cid(); 
+    headerEmail();
+}
+
+// Memunculkan modal
+let btnModal = document.getElementById('btnModal');
+
+function modalPopup(){
+    btnModal.click();
+}
+
+// Animasi Loading Generate
+
+let btnGenerate = document.getElementById('btnGenerate');
+let btnLoading = document.getElementById('btnLoading');
+
+btnLoading.style.display = 'none';
+
+function startProses(){
+    btnGenerate.style.display = 'none';
+    btnLoading.style.display = 'block';
+}
+function endProses(){
+    btnGenerate.style.display = 'block';
+    btnLoading.style.display = 'none';
+}
+function generateProses(){
+    startProses();
+
+    setTimeout(function(){
+        endProses();
+        modalPopup();
+    },3000);
+}
+
+// Animasi Loading Clear..
+
+let btnClear = document.getElementById('btnClear');
+let btnClearLoading = document.getElementById('btnClearLoading');
+
+btnClearLoading.style.display = 'none';
+
+function startClear(){
+    btnClear.style.display = 'none';
+    btnClearLoading.style.display = 'block';
+}
+function endClear(){
+    btnClear.style.display = 'block';
+    btnClearLoading.style.display = 'none';   
+}
+function clearProses(){
+    startClear();
+    setTimeout(function(){
+        endClear();
+        window.location.reload();
+    },1000)
+}
 
