@@ -109,8 +109,8 @@ function isiEmailTujuan() {
         targetSubjectEmail.value = issueMetro + " || JARINGANKU SARANA NUSANTARA || " + cidMetro;
 
     }else if (emailTujuan == "Moratel") {
-        targetEmailProvider.value = "cs@moratelindo.co.id" + ", " + emailKoordinator + ", " + emailPic;
-        targetCcProvider.value = "hermawati@moratelindo.co.id, noc@jsn.net.id";
+        targetEmailProvider.value = "cs@moratelindo.co.id";
+        targetCcProvider.value = "hermawati@moratelindo.co.id, noc@jsn.net.id" + ", " + emailKoordinator + ", " + emailPic;
         targetSubjectEmail.value = "JSN Site ( " + daerah + " )" + " - " + issueMetro ;
 
     }else {
