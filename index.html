@@ -110,12 +110,16 @@
             </button>
             <button type="button" id="btnModal" class="visually-hidden" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></button>
           </div>
-          
-          </div>
+          <!-- btn Clear -->
           <div class="col-md-3">
-            <button class="btn btn-danger" onClick="window.location.reload();">
-              <i class="far fa-trash-alt shadow"></i>
+            <button type="button" id="btnClear" class="btn btn-danger shadow" onclick="clearProses();">
+              <i class="fa fa-trash"></i>
               <span class="ps-2">Clear</span>
+            </button>
+            <!-- loading animation button -->
+            <button id="btnClearLoading" class="btn btn-danger" type="button" disabled>
+              <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+              <span class="ps-1">Clearing..</span>
             </button>
           </div>
         </form>
