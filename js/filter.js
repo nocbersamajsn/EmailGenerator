@@ -158,7 +158,7 @@ function generateProses(){
     setTimeout(function(){
         endProses();
         modalPopup();
-    },3000);
+    },2500);
 }
 
 // Animasi Loading Clear..
@@ -181,6 +181,6 @@ function clearProses(){
     setTimeout(function(){
         endClear();
         window.location.reload();
-    },1000)
+    },700)
 }
 
