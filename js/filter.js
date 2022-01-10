@@ -100,7 +100,7 @@ function isiEmailTujuan() {
 
     }else if (emailTujuan == "XL Axiata") {
         targetEmailProvider.value = "cs-busol@xl.co.id";
-        targetCcProvider.value = "asria@xl.co.id, noc@jsn.net.id" + ", " + emailKoordinator + ", " + emailPic;
+        targetCcProvider.value = "asria@xl.co.id, radena@xl.co.id, noc@jsn.net.id" + ", " + emailKoordinator + ", " + emailPic;
         targetSubjectEmail.value = issueMetro + " || JARINGANKU SARANA NUSANTARA || " + cidMetro;
 
     }else if (emailTujuan == "H3I") {
