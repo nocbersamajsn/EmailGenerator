@@ -124,6 +124,7 @@ var dataEmail = [
     ['XL Axiata','Probolinggo','Probolinggo','004C6714L8','PROBOLINGGO','1 Gbps','hasenda14071986@gmail.com',''],
     ['XL Axiata','Bengkalis','Bengkalis','020C6714L10','BENGKALIS','1 Gbps','usman.malik@jsn.net.id',''],
     ['XL Axiata','Tuban','Tuban','004C6714L11','TUBAN','1 Gbps','rizal.abdi@gmail.com',''],
+    ['XL Axiata','Rembang','Sarang','004C6714L17','REMBANG','1 Gbps','ardibeni28@gmail.com',''],
 
     // Hutcison Tri (H3I)
     ['H3I','Tulungagung','Blitar','LCA_JSN_JKT_BLT_001','BLITAR','1 Gbps','badrayana@jsn.net.id','lintangelok123@gmail.com'],
