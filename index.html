@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="css/box.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.png"/>
+
+    <title>Email Generator</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Luckiest+Guy&display=swap');
+    </style>
+
+  </head>
+  <body>
+    <div class="container register shadow">
+        <div class="row">
+            <div class="col-md-3 register-left">
+                <img src="img/logo-white.png" alt=""/>
+                <h3 class="text-warning"><strong>Welcome NOC</strong></h3>
+                <p>Pilih provider dan daerah dengan benar sebelum men-Generate.</p>
+                <small>Copyright © 2021 <br> <a class="text-warning" href="https://www.jsn.net.id/">PT Jaringanku Sarana Nusantara</a> <br> All Rights Reserved.</small>
+                <!-- <input type="submit" name="" value="Login"/><br/> -->
+            </div>
+            <div class="col-md-9 register-right">
+                <!-- <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Komplain</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profilex" role="tab" aria-controls="profile" aria-selected="false">Laporan</a>
+                    </li>
+                </ul> -->
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+                        <h1 class="register-heading" style="font-family: 'Luckiest Guy', cursive; color: black;">Email Generator</h1>
+                        <div class="row register-form">
+                            <div class="col-md-6">
+                                <div class="form-group form-inline d-flex justify-content-between">
+                                    <div class="input-group-prepend col-md-4 p-1">
+                                        <label style="width: 100%;" class="input-group-text">Provider</label>
+                                    </div>
+                                    <!-- <label class="col-md-4 border-left">Provider</label> -->
+                                    <select class="col-md-8 custom-select" name="provider" id="level1">
+                                        <!-- <option value="">Pilih provider</option> -->
+                                    </select>
+                                </div>
+                                <div class="form-group form-inline d-flex justify-content-between">
+                                    <div class="input-group-prepend col-md-4 p-1">
+                                        <label style="width: 100%;" class="input-group-text">Daerah</label>
+                                    </div>
+                                    <!-- <label class="col-md-4 border-left">Daerah</label> -->
+                                    <select class="col-md-8 custom-select" name="provider" id="level2">
+                                        <!-- <option value="">Pilih Daerah</option> -->
+                                    </select>
+                                </div>
+                                <div class="form-group form-inline d-flex justify-content-between">
+                                    <div class="input-group-prepend col-md-4 p-1">
+                                        <label style="width: 100%;" class="input-group-text">Lokasi</label>
+                                    </div>
+                                    <!-- <label class="col-md-4 border-left">Lokasi</label> -->
+                                    <select class="col-md-8 custom-select" name="provider" id="level3">
+                                        <!-- <option value="">Pilih Lokasi</option> -->
+                                    </select>
+                                </div>
+                                <hr>
+                                <div class="form-group form-inline d-flex justify-content-between">
+                                    <div class="input-group-prepend col-md-4 p-1">
+                                        <label style="width: 100%;" class="input-group-text">Issue</label>
+                                    </div>
+                                    <!-- <label class="col-md-4 border-left">Issue</label> -->
+                                    <select class="col-md-8 custom-select" name="provider" id="issueMetro" onchange="metroIssue();">
+                                        <option value=" *(belum memilih keluhan)* ">Pilih Metro Issue..</option>
+                                        <option value="DOWN">Down</option>
+                                        <option value="INTERMITTENT">Intermittent</option>
+                                        <option value="HIGH LATENCY">High Latency</option>
+                                        <option value="UP & DOWN">Up & Down</option>
+                                        <option value="BANDWIDTH LIMITED">Bandwidth Limited</option>
+                                    </select>
+                                </div>
+                                <hr>
+                                <div class="form-group">
+                                    <div class="maxl form-inline d-flex justify-content-between">
+                                        <div class="input-group-prepend col-md-4 p-1">
+                                            <label style="width: 100%;" class="input-group-text">Logo</label>
+                                        </div>
+                                        <!-- <label class="pr-2" >Logo :</label> -->
+                                        <label class="radio inline"> 
+                                            <input id="denganLogo" type="radio" name="logo" value="iya" checked onclick="pilihLogo();">
+                                            <span class="pl-2"> Yes </span> 
+                                        </label>
+                                        <label class="radio inline"> 
+                                            <input id="tanpaLogo" type="radio" name="logo" value="tidak" onclick="pilihLogo();">
+                                            <span class="pl-2 pr-2" > No </span> 
+                                        </label>
+                                        <p id="output"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 pl-2">
+                                <div class="form-group form-inline d-flex justify-content-between">
+                                    <div class="input-group-prepend col-md-4 p-1">
+                                        <label style="width: 100%;" class="input-group-text">CID</label>
+                                    </div>
+                                    <!-- <label class="col-md-4 border-left">Provider</label> -->
+                                    <select class="col-md-8 custom-select" name="provider" id="level4">
+                                        <!-- <option value="">Pilih provider</option> -->
+                                    </select>
+                                </div>
+                                <div class="form-group form-inline d-flex justify-content-between">
+                                    <div class="input-group-prepend col-md-4 p-1">
+                                        <label style="width: 100%;" class="input-group-text">Site</label>
+                                    </div>
+                                    <!-- <label class="col-md-4 border-left">Daerah</label> -->
+                                    <select class="col-md-8 custom-select" name="provider" id="level5">
+                                        <!-- <option value="">Pilih Daerah</option> -->
+                                    </select>
+                                </div>
+                                <div class="form-group form-inline d-flex justify-content-between">
+                                    <div class="input-group-prepend col-md-4 p-1">
+                                        <label style="width: 100%;" class="input-group-text">Capacity</label>
+                                    </div>
+                                    <!-- <label class="col-md-4 border-left">Lokasi</label> -->
+                                    <select class="col-md-8 custom-select" name="provider" id="level6">
+                                        <!-- <option value="">Pilih Lokasi</option> -->
+                                    </select>
+                                </div>
+                                <select style="display: none;" class="form-control" id="level7"></select>
+                                <select style="display: none;" class="form-control" id="level8"></select>
+                                <hr>
+                                <div class="form-group form-inline d-flex justify-content-between">
+                                    <div class="input-group-prepend col-md-4 p-1">
+                                        <label style="width: 100%;" class="input-group-text">NOC</label>
+                                    </div>
+                                    <!-- <label class="pr-2">NOC</label> -->
+                                    <select name="" id="pengirim" class="col-md-8 custom-select">
+                                        <option value="- Belum Dipilih -">Siapa Kamu..</option>
+                                        <option value="Yuan Irawan">Yuan Irawan</option>
+                                        <option value="Fahmi Aziz">Fahmi Aziz</option>
+                                        <option value="Bagas Alwiyantoro">Bagas Alwiyantoro</option>
+                                        <option value="Aris Budiono">Aris Budiono</option>
+                                        <option value="Soni Puput Nugroho">Soni Puput Nugroho</option>
+                                        <option value="Mustamid Nur">Mustamid Nur</option>
+                                        <option value="Miradi Sanjaya">Miradi Sanjaya</option>
+                                    </select>
+                                </div>
+                                <hr>
+
+                                <!-- Tombol Bawah -->
+                                <!-- Btn Generate -->
+                                <button id="btnGenerate" class="btn btn-success btnRegister" data-toggle="modal" data-target="#staticBackdrop" onclick="generateEmail()">
+                                    <i class="fa fa-edit"></i>
+                                    <span class="pl-2">Generate</span>
+                                </button>
+                                <!-- <button id="btnloading" class="btn btn-success btnRegister" type="button" disabled>
+                                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                    Generating
+                                </button>
+                                <button style="display: none;" type="button" id="btnModal"  class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop"></button> -->
+
+
+                                  <!-- Btn Clear -->
+                                
+                                <button id="btnClear" class="btn btn-danger btnClear" onclick="window.location.reload();">
+                                    <i class="fa fa-trash"></i>
+                                    <span class="pl-2">Clear</span>
+                                </button>
+                                <!-- <button id="btnClearLoading" class="btn btnClear btn-danger" type="button" disabled>
+                                    <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                                    Clearing
+                                  </button> -->
+                                <!-- tombol ends -->
+
+
+                            </div>
+                        </div>
+
+                        <!-- Tombol Bawah -->
+                        <!-- <div class="d-flex justify-content-between pl-5 pb-3">
+                                <button id="btnGenerate" class="btn btn-success btn-sm" data-toggle="modal" data-target="#staticBackdrop" onclick="generateEmail(); generateLoading();">
+                                    <i class="fa fa-edit"></i>
+                                    <span class="pl-2">Generate</span>
+                                </button>
+                                <button id="btnloading" class="btn btn-success btn-sm" type="button" disabled>
+                                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                    Generating
+                                </button>
+                                <button style="display: none;" type="button" id="btnModal"  class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop"></button>
+                                
+                                <button id="btnClear" class="btn btn-danger btn-sm" onclick="clearProses();">
+                                    <i class="fa fa-trash"></i>
+                                    <span class="pl-2">Clear</span>
+                                </button>
+                                <button id="btnClearLoading" class="btn btn-danger btn-sm" type="button" disabled>
+                                    <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                                    Clearing
+                                  </button>
+                            </div> -->
+
+                    </div>
+                    <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <h2 class="register-heading" style="font-family: 'Lobster', cursive;">Komplain Provider Massal</h2>
+                        <div class="row register-form">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="First Name *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Last Name *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Email *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" maxlength="10" minlength="10" class="form-control" placeholder="Phone *" value="" />
+                                </div>
+
+
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Password *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Confirm Password *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control">
+                                        <option class="hidden"  selected disabled>Please select your Sequrity Question</option>
+                                        <option>What is your Birthdate?</option>
+                                        <option>What is Your old Phone Number</option>
+                                        <option>What is your Pet Name?</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="`Answer *" value="" />
+                                </div>
+                                <input type="submit" class="btnRegister"  value="Register"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal rounded fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
+          <div class="modal-content p-3">
+            <div class="modal-header">
+              <h2 style="text-align: center; margin: 0 auto; align-items: center;" class="modal-title" id="staticBackdropLabel">
+                <!-- <span class="ps2"><i class="far fa-check-circle text-success"></i></span> -->
+                <div class="spinner-grow text-success" role="status">
+                    <span class="sr-only">Loading...</span>
+                  </div>
+                <!-- <i class="far fa-envelope text-success"></i> -->
+                <span style="font-family: 'Lobster', cursive;" class="ps-3">Generated Email</span>
+              </h2>
+              <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+            </div>
+            <div class="modal-body p-5">
+
+              <!-- Email Tujuan -->
+              <div class="row">
+                <!-- Alamat email tujuan -->
+                <div class="col-lg">
+                    <p><strong>Email Tujuan</strong></p>
+                </div>
+                <!-- The text field -->
+                <div class="col-lg-8">
+                    <input type="text" placeholder="masukan email tujuan" value="" id="copyText" readonly>
+                </div>
+                <div class="col-lg">
+                <!-- The button used to copy the text -->
+                <button class="copyButton btn btn-success shadow" id="copyBtn"> 
+                    <i class="far fa-copy"></i>
+                    <span class="ps-2">Copy</span>
+                </button>
+                </div>
+            </div>
+            <!-- CC Email Provider -->
+            <div class="row">
+                <!-- Alamat email tujuan -->
+                <div class="col-lg">
+                    <p><strong>Cc Email</strong></p>
+                </div>
+                <!-- The text field -->
+                <div class="col-lg-8">
+                    <input type="text" placeholder="masukan cc email" value="" id="copyText2" readonly>
+                </div>
+                <div class="col-lg">
+                <!-- The button used to copy the text -->
+                <button class="copyButton btn btn-success shadow" id="copyBtn2">
+                    <i class="far fa-copy"></i>
+                    <span class="ps-2">Copy</span>
+                </button>
+                </div>
+            </div>
+            <!-- Subject Email -->
+            <div class="row">
+                <!-- Alamat email tujuan -->
+                <div class="col-lg">
+                    <p><strong>Subject</strong></p>
+                </div>
+                <!-- The text field -->
+                <div class="col-lg-8">
+                    <input type="text" placeholder="tuliskan subject email" value="" id="copyText3" readonly>
+                </div>
+                <div class="col-lg">
+                <!-- The button used to copy the text -->
+                <button class="copyButton btn btn-success shadow" id="copyBtn3">
+                    <i class="far fa-copy"></i>
+                    <span class="ps-2">Copy</span>
+                </button>
+                </div>
+            </div>
+              
+            
+            <hr>
+  
+          <!-- Isi Email -->
+            <div id="contentEmail" class="isiEmail">
+  
+                <p>Dengan Hormat <span id="provider"></span>,</p>
+                <br>
+                <p>Mohon bantuan pengecekan untuk link Metro-E dengan data sebagai berikut :</p>
+                <br>
+                <table style="border: hidden">
+                    <tr>
+                        <td>Customer Name</td>
+                        <td> : </td>
+                        <td>PT. Jaringanku Sarana Nusantara</td>
+                    </tr>
+                    <tr>
+                        <td>Circuit ID</td>
+                        <td> : </td>
+                        <td id="cid"><i>-Belum diisi-</i></td>
+                    </tr>
+                    <tr>
+                        <td>Site</td>
+                        <td> : </td>
+                        <td id="site"><i>-Belum diisi-</i></td>
+                    </tr>
+                    <tr>
+                        <td>Capacity</td>
+                        <td> : </td>
+                        <td id="kapasitas"><i>-Belum diisi-</i></td>
+                    </tr>
+                    <tr>
+                        <td>Keluhan</td>
+                        <td> : </td>
+                        <td id="keluhan"><i>-Belum diisi-</i></td>
+                    </tr>
+                </table>
+  
+                <br>
+                <p>Berikut kami lampirkan juga capture latency dan graph smokeping-nya</p>
+                <br>
+                <p>Demikian informasi yang dapat kami sampaikan. Atas perhatian dan kerjasamanya kami ucapkan Terimakasih.</p>
+                <br>
+                <p>Hormat Kami,</p>
+  
+                <!-- Signature NOC -->
+                <div >
+                    <p><b id="signature">-Belum diisi-</b></p>
+  
+                    <p style="margin: 0px;">NOC | Support</p>
+  
+                    <a id="logoSign" href="http://www.jsn.net.id/" rel="nofollow" target="_blank"><img style="padding: 5px 0 5px 10px; width: auto; height: 48px;" src="https://res.cloudinary.com/unifyid/image/upload/v1634988574/Logo%20JSN/Logo_email_jsn_qfojk2.png" /></a>
+                    
+                    <p style="margin: 0px;">
+                        <span>PT. JARINGANKU SARANA NUSANTARA</span> <br />
+                        <span style="font-size: 8pt;">Jl. Mr. Iskandar No.65E, Blaru, Pati, Jawa Tengah 59114</span>
+                    </p>
+  
+                    <p style="margin: 0px;">Email : <em><span style="color: #336699;"><a href="mailto:noc@jsn.net.id" rel="nofollow" style="color: #336699; text-decoration: none;" target="_blank">noc@jsn.net.id</a></span> | <a href="http://www.jsn.net.id/" rel="nofollow" style="text-decoration: none; color: #336699;" target="_blank">www.jsn.net.id</a></em>
+                    </p>
+                </div>
+        </div>
+        <!-- Isi Email Close -->
+  
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary shadow" data-dismiss="modal">
+                <i class="fa fa-times"></i>
+                <span class="ps-2">Close</span>
+              </button>
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="js/dropdown.js"></script>
+    <script src="js/filter.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+        <script>
+            const copyBtn = document.getElementById('copyBtn');
+            const copyBtn2 = document.getElementById('copyBtn2');
+            const copyBtn3 = document.getElementById('copyBtn3');
+            const copyText = document.getElementById('copyText');
+            const copyText2 = document.getElementById('copyText2');
+            const copyText3 = document.getElementById('copyText3');
+            
+            copyBtn.onclick = () => {
+                copyText.select();    // Selects the text inside the input
+                document.execCommand('copy');    // Simply copies the selected text to clipboard 
+                 Swal.fire({         //displays a pop up with sweetalert
+                    icon: 'success',
+                    title: 'Text copied to clipboard',
+                    showConfirmButton: false,
+                    timer: 1000
+                });
+            }
+
+            copyBtn2.onclick = () => {
+                copyText2.select();    // Selects the text inside the input
+                document.execCommand('copy');    // Simply copies the selected text to clipboard 
+                 Swal.fire({         //displays a pop up with sweetalert
+                    icon: 'success',
+                    title: 'Text copied to clipboard',
+                    showConfirmButton: false,
+                    timer: 1000
+                });
+            }
+
+            copyBtn3.onclick = () => {
+                copyText3.select();    // Selects the text inside the input
+                document.execCommand('copy');    // Simply copies the selected text to clipboard 
+                 Swal.fire({         //displays a pop up with sweetalert
+                    icon: 'success',
+                    title: 'Text copied to clipboard',
+                    showConfirmButton: false,
+                    timer: 1000
+                });
+            }
+        </script>
+
+  </body>
+</html>

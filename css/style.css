@@ -1,0 +1,60 @@
+.modal-content {
+    border-top-right-radius: 5.5rem;
+    border-bottom-left-radius: 5.5rem;
+    border-left:2px solid #3931af;
+    border-bottom:2px solid #00c6ff;
+    border-right:2px solid #3931af;
+    border-top:2px solid #00c6ff;
+}
+
+.modal-body input {
+    width: 650px;
+    height: 35px;
+    color: #fff;
+    /* background-color: #261bca; */
+    background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+    border: hidden;
+    margin: 3px 2px;
+    padding: 0 2rem;
+    border-radius: 10px;
+    font-size: 11pt;
+    /* opacity: 0.7; */
+}
+
+.modal-body input::placeholder {
+    font-style: italic;
+    color: #fff;
+    /* opacity: 0.7; */
+    font-weight: lighter;
+}
+
+.modal-body button {
+    text-align: center;
+}
+.modal-body td {
+    padding: 1px 25px 1px 0;
+    font-size: 11pt;
+}
+.modal-body p {
+    font-size: 11pt;
+}
+
+select:optional {
+    padding-left: 20px;
+    opacity: 0.9;
+}
+
+.input-group-prepend {
+    color: yellow;
+}
+.input-group-text {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    
+}
+.custom-select {
+    border-radius: 0.5rem;
+    color: black;
+}
