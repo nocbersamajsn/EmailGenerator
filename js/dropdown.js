@@ -112,7 +112,7 @@ var dataEmail = [
     ['XL Axiata','Lombok','Kayangan','020C6714L5','KAYANGAN','500 Mbps','iqbal@jsn.net.id',''],
     ['XL Axiata','Lombok','Aikmel','020C6714L7','AIKMEL','500 Mbps','iqbal@jsn.net.id',''],
     ['XL Axiata','Lombok','Pancor','004C6714L1','PANCOR','2 Gbps','iqbal@jsn.net.id',''],
-    ['XL Axiata','Lombok','Narmada','004C6714L9','NARMADA','*****','iqbal@jsn.net.id',''],
+    ['XL Axiata','Lombok','Narmada','004C6714L9','NARMADA','100 Mbps','iqbal@jsn.net.id',''],
     ['XL Axiata','Lombok','Kedome','020C6714L8','KEDOME','100 Mbps','iqbal@jsn.net.id',''],
     ['XL Axiata','Lombok','Kopang','*****','KOPANG','*****','iqbal@jsn.net.id',''],
     ['XL Axiata','Lombok','Sambalia','004C6714L18','SAMBALIA','200 Mbps','iqbal@jsn.net.id',''],
