@@ -88,25 +88,29 @@
                                         <option value="BANDWIDTH LIMITED">Bandwidth Limited</option>
                                     </select>
                                 </div>
-                                <hr>
-                                <div class="form-group">
-                                    <div class="maxl form-inline d-flex justify-content-between">
-                                        <div class="input-group-prepend col-md-4 p-1">
-                                            <label style="width: 100%;" class="input-group-text">Logo</label>
-                                        </div>
-                                        <!-- <label class="pr-2" >Logo :</label> -->
-                                        <label class="radio inline"> 
-                                            <input id="denganLogo" type="radio" name="logo" value="iya" checked onclick="pilihLogo();">
-                                            <span class="pl-2"> Yes </span> 
-                                        </label>
-                                        <label class="radio inline"> 
-                                            <input id="tanpaLogo" type="radio" name="logo" value="tidak" onclick="pilihLogo();">
-                                            <span class="pl-2 pr-2" > No </span> 
-                                        </label>
-                                        <p id="output"></p>
+                                <div class="form-group form-inline d-flex justify-content-between">
+                                    <div class="input-group-prepend col-md-4 p-1">
+                                        <label style="width: 100%;" class="input-group-text">Ekskalasi</label>
                                     </div>
+                                    <!-- <label class="col-md-4 border-left">Lokasi</label> -->
+                                    <select class="col-md-8 custom-select" name="provider" id="t1">
+                                    </select>
+                                </div>
+                                <hr>
+                                <!-- Btn Clear -->
+                                <div class="form-group form-inline d-flex justify-content-end">
+                                <button id="btnClear" class="btn btn-danger btnClear" onclick="clearProses();">
+                                <i class="fa fa-trash"></i>
+                                <span class="pl-">Clear</span>
+                                </button>
+                                <button id="btnClearLoading" class="btn btnClear btn-danger" type="button" disabled>
+                                    <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                                    Clearing
+                                  </button>
+                                <!-- tombol ends -->
                                 </div>
                             </div>
+                            
                             <div class="col-md-6 pl-2">
                                 <div class="form-group form-inline d-flex justify-content-between">
                                     <div class="input-group-prepend col-md-4 p-1">
@@ -154,58 +158,46 @@
                                         <option value="Miradi Sanjaya">Miradi Sanjaya</option>
                                     </select>
                                 </div>
+                                <div style="display: none;">
+                                    <select class="col-md-8 custom-select" name="" id="t2">
+                                        <!-- <option value="">Pilih Lokasi</option> -->
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <div class="maxl form-inline d-flex justify-content-between">
+                                        <div class="input-group-prepend col-md-4 p-1">
+                                            <label style="width: 100%;" class="input-group-text">Logo</label>
+                                        </div>
+                                        <!-- <label class="pr-2" >Logo :</label> -->
+                                        <label class="radio inline"> 
+                                            <input id="denganLogo" type="radio" name="logo" value="iya" checked onclick="pilihLogo();">
+                                            <span class="pl-2"> Yes </span> 
+                                        </label>
+                                        <label class="radio inline"> 
+                                            <input id="tanpaLogo" type="radio" name="logo" value="tidak" onclick="pilihLogo();">
+                                            <span class="pl-2 pr-2" > No </span> 
+                                        </label>
+                                        <p id="output"></p>
+                                    </div>
+                                </div>
                                 <hr>
 
-                                <!-- Tombol Bawah -->
+                                <div class="form-group form-inline d-flex justify-content-end">
                                 <!-- Btn Generate -->
-                                <button id="btnGenerate" class="btn btn-success btnRegister" data-toggle="modal" data-target="#staticBackdrop" onclick="generateEmail()">
+                                <button id="btnGenerate" class="btn btn-success btnRegister" data-toggle="modal" data-target="#" onclick="generateEmail();generateProses();">
                                     <i class="fa fa-edit"></i>
                                     <span class="pl-2">Generate</span>
                                 </button>
-                                <!-- <button id="btnloading" class="btn btn-success btnRegister" type="button" disabled>
-                                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                                    Generating
-                                </button>
-                                <button style="display: none;" type="button" id="btnModal"  class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop"></button> -->
-
-
-                                  <!-- Btn Clear -->
-                                
-                                <button id="btnClear" class="btn btn-danger btnClear" onclick="window.location.reload();">
-                                    <i class="fa fa-trash"></i>
-                                    <span class="pl-2">Clear</span>
-                                </button>
-                                <!-- <button id="btnClearLoading" class="btn btnClear btn-danger" type="button" disabled>
-                                    <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-                                    Clearing
-                                  </button> -->
-                                <!-- tombol ends -->
-
-
-                            </div>
-                        </div>
-
-                        <!-- Tombol Bawah -->
-                        <!-- <div class="d-flex justify-content-between pl-5 pb-3">
-                                <button id="btnGenerate" class="btn btn-success btn-sm" data-toggle="modal" data-target="#staticBackdrop" onclick="generateEmail(); generateLoading();">
-                                    <i class="fa fa-edit"></i>
-                                    <span class="pl-2">Generate</span>
-                                </button>
-                                <button id="btnloading" class="btn btn-success btn-sm" type="button" disabled>
+                                <button id="generateLoading" class="btn btn-success btnRegister" type="button" disabled>
                                     <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                                     Generating
                                 </button>
                                 <button style="display: none;" type="button" id="btnModal"  class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop"></button>
+
+                                </div>
                                 
-                                <button id="btnClear" class="btn btn-danger btn-sm" onclick="clearProses();">
-                                    <i class="fa fa-trash"></i>
-                                    <span class="pl-2">Clear</span>
-                                </button>
-                                <button id="btnClearLoading" class="btn btn-danger btn-sm" type="button" disabled>
-                                    <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-                                    Clearing
-                                  </button>
-                            </div> -->
+                            </div>
+                        </div>
 
                     </div>
                     <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
@@ -367,7 +359,7 @@
                 </table>
   
                 <br>
-                <p>Berikut kami lampirkan juga capture latency dan graph smokeping-nya</p>
+                <p>Berikut kami lampirkan juga capture latency dan graph smokeping hasil monitoring kami.</p>
                 <br>
                 <p>Demikian informasi yang dapat kami sampaikan. Atas perhatian dan kerjasamanya kami ucapkan Terimakasih.</p>
                 <br>
@@ -375,7 +367,7 @@
   
                 <!-- Signature NOC -->
                 <div >
-                    <p><b id="signature">-Belum diisi-</b></p>
+                    <p><b id="signature">-Belum dipilih-</b></p>
   
                     <p style="margin: 0px;">NOC | Support</p>
   
