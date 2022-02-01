@@ -207,10 +207,5 @@ function clearProses(){
         window.location.reload();
     },700)
 }
-// Alert Eskalasi
-const eskalasi = document.getElementByid("t1").value;
 
-function konfirmasi(){
-    alert(eskalasi);
-}
 
