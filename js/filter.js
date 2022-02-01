@@ -208,4 +208,17 @@ function clearProses(){
     },700)
 }
 
+// Konfirmasi Pilihan Ekskalasi
+var e = document.getElementById("t1");
 
+function konfirmasi(){
+  var ekskalasiDipilih = e.options[e.selectedIndex].value;
+  let text = "Ekskalasi yang kamu pilih adalah " + ekskalasiDipilih + "! \rLanjutkan?";
+
+  if (confirm(text) == true) {
+    // alert("You pressed OK!");
+    generateProses();
+  } else {
+    // alert("Proses Generate dibatalkan! \rSilahkan ulangi lagi!");
+  }
+}
