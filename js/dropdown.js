@@ -156,7 +156,7 @@ var dd = new DropDown(dataEmail).tambahDropdown(['level1','level2','level3','lev
 
 
 
-var emailMitra = [
+var emailEkskalasi = [
     ['Icon Plus','Normal','angelin.filanda@iconpln.co.id, noc@jsn.net.id, ramadhan.yondra@iconpln.co.id,'],
 
     ['Fiberstar','Normal','hari.pujiharto@fiberstar.co.id, noc@jsn.net.id,'],
@@ -181,7 +181,7 @@ var emailMitra = [
 ];
 
 
-var dd2 = new DropDown(emailMitra);
+var dd2 = new DropDown(emailEkskalasi);
 dd2.add({target: 't1', tergantungPada: ['level1']});
 dd2.add({target: 't2', tergantungPada: ['level1','t1']});
 dd2.add({target: 't3', tergantungPada: ['level1','t1','t2']});
