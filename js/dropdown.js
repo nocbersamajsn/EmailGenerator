@@ -157,6 +157,7 @@ var dd = new DropDown(dataEmail).tambahDropdown(['level1','level2','level3','lev
 
 
 var emailEkskalasi = [
+    ['Piluih Provider','Pilih Ekskalasi','Email Ekskalasi'],
     ['Icon Plus','Normal','angelin.filanda@iconpln.co.id, noc@jsn.net.id, ramadhan.yondra@iconpln.co.id,'],
 
     ['Fiberstar','Normal','hari.pujiharto@fiberstar.co.id, noc@jsn.net.id,'],
