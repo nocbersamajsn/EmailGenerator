@@ -90,7 +90,7 @@ var dataEmail = [
     // Indosat Oreedoo
     ['Indosat','Aceh','BIRUEN','DETH_MTX09482393_JKS_8535','BIRUEN','500 Mbps','waxherman@jsn.net.id',''],
     ['Indosat','Aceh','BIRUEN','DETH J-S-N BRN-ETR 210317','BIRUEN','1 Gbps','waxherman@jsn.net.id',''],
-    ['Indosat','Kutai Timur','SANGATTA','DETH_MTX09482393_JKS_8866','SANGATTA','200 Mbps','neozack24@gmail.com',''],
+    ['Indosat','Kutai Timur','SANGATTA','DETH J-S-N SAA-ETR 220072','SANGATTA','500 Mbps','neozack24@gmail.com',''],
     ['Indosat','Kutai Timur','PINRANG','DETH J-S-N PIN-ETR 210247','PINRANG','1 Gbps','neozack24@gmail.com','admin@lontaranetwork.id'],
     ['Indosat','Kutai Timur','POLEWALI','DETH J-S-N PLW-ETR 210466','POLEWALI','1 Gbps','neozack24@gmail.com',''],
     ['Indosat','Sulawesi Utara','MANADO','DETH J-S-N MND-ETR 210676','MANADO','300 Mbps','a.anaogi@gmail.com',''],
