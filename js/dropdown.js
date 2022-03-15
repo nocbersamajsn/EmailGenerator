@@ -81,6 +81,7 @@ var dataEmail = [
     ['Icon Plus','Tulungagung','Tamban Pakel','01000143386 (IP VPN)','Lintas Barat Bungkur, Bungkur, Tamban Pakel, Kab.Tulungagung, Jawa Timur 66273, Indonesia (100Mbps) (01000143386)','100 Mbps','badrayana@jsn.net.id',''],
     ['Icon Plus','Malang','Bantur','01000152771 (Metro-E)','Dusun Bantur Timur RT33/RW 07, Desa Bantur Kec Bantur,- ,Kabupaten Malang ,Jawa Timur ,Indonesia (1 Gbps) (01000152771)','1 Gbps','malang@jsn.net.id',''],
     ['Icon Plus','Malang','Pagak','01000124790 (Metro-E)','Dusun Judeg, RT.10/RW.03, Desa Tlogorejo, Kecamatan Pagak, Kabupaten Malang, Jawa Timur (2 Gbps) (01000124790)','1 Gbps','malang@jsn.net.id',''],
+    ['Icon Plus','Malang','Ampel Gading','01000124790 (Metro-E)','Jl. Raya Tirtomarto, Putukrejo, Tirtomarto, Ampelgading, Kabupaten Malang. Jawa Timur 65183, lndonesia. (1 Gbps) (01000189483)','1 Gbps','malang@jsn.net.id',''],
     ['Icon Plus','Malang','Krajan','01000143363 (IP VPN)','Krajan, Dengkol, Kec.Singosari, Malang Kab. Malang, Jawa Tmur 65153, Indonesia (50Mbps) (01000143363)','50 Mbps','malang@jsn.net.id',''],
 ['Icon Plus','Malang','Bantur','01000143366 (IP VPN)','Balewarti. rejosari, Bantur, Malang, Kab.Malang, Jawa Timur 65179, Indonesia (50Mbps) (01000143366)','50 Mbps','malang@jsn.net.id',''],
 ['Icon Plus','Malang','Turen','01000143381 (IP VPN)','Sidorejo RT 32 RW 12 Pagelaran, Sumbersoko, Kemulan, Kec.Turen, Malang, Kab.Malang, Jawa Timur 65174, Indonesia (50Mbps) (01000143381)','50 Mbps','malang@jsn.net.id',''],
