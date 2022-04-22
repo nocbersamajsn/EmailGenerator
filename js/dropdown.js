@@ -100,7 +100,7 @@ var dataEmail = [
     ['Fiberstar','Pati','Jontro','CRT2104003077','PATI','13 Gbps','haansiro@gmail.com',''],
     ['Fiberstar','Demak','Pop Kudus','CRT2104009744','DEMAK','8 Gbps','kholilur@jsn.net.id, larco.kun@gmail.com',''],
     ['Fiberstar','Ngawi','Ngawi','CRT2009005413','NGAWI','2 Gbps','uudsapto@gmail.com',''],
-    ['Fiberstar','Kediri','Kediri','CRT2010001796','KEDIRI','2 Gbps','kangmuzan@gmail.com',''],
+    ['Fiberstar','Kediri','Kediri','CRT2110002230','KEDIRI','2 Gbps','kangmuzan@gmail.com',''],
     ['Fiberstar','Malang','Sumberpucung','CRT2104003075','MALANG','3 Gbps','malang@jsn.net.id, rizqi.kuswanto@fiberstar.co.id',''],
     ['Fiberstar','Bali','Gianyar','CRT2104009127','BALI','1 Gbps','w.sujana@jsn.net.id',''],
     ['Fiberstar','Ungaran','Salatiga','CRT2108009824','UNGARAN','500 Mbps','cs.deltamitra@gmail.com',''],
@@ -142,6 +142,10 @@ var dataEmail = [
     // Fibernet
     ['Fibernet','Jakarta','Depok','IS154020','JAKARTA','300 Mbps','ibnu.rachmadi@jsn.net.id',''],
     ['Fibernet','Jakarta','Johar Baru','IS14A42','JAKARTA','1 Gbps','ibnu.rachmadi@jsn.net.id',''],
+    ['Fibernet','Jakarta','Pejaten','IS163069','JAKARTA','100 Mbps','ibnu.rachmadi@jsn.net.id',''],
+    ['Fibernet','Jakarta','Pluit Sea','IS15C030','JAKARTA','100 Mbps','ibnu.rachmadi@jsn.net.id',''],
+    
+
 
 ];
 
