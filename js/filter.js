@@ -90,7 +90,7 @@ function isiEmailTujuan() {
         targetSubjectEmail.value = "JSN Site ( " + daerah + " )" + " - " + issueMetro ;
 
     }else if (emailTujuan == "Indosat") {
-        targetEmailProvider.value = "corporate.helpdesk@indosatooredoo.com";
+        targetEmailProvider.value = "corporate.helpdesk@ioh.co.id";
         targetCcProvider.value = eskalasiEmail + emailNoc + " " + emailKoordinator + ", " + emailPic;
         // targetCcProvider.value = "nico.enjelit@indosatooredoo.com, noc@jsn.net.id" + ", " + emailKoordinator + ", " + emailPic;
         targetSubjectEmail.value = issueMetro + " || JARINGANKU SARANA NUSANTARA || " + cidMetro;
