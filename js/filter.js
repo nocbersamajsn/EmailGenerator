@@ -120,10 +120,10 @@ function isiEmailTujuan() {
         targetSubjectEmail.value = "JSN Site ( " + daerah + " )" + " - " + issueMetro ;
 
     }else {
-        targetEmailProvider.value = "";
+        targetEmailProvider.value = "hanggoro@fiber.net.id";
         targetCcProvider.value = eskalasiEmail + emailNoc + " " + emailKoordinator + ", " + emailPic;
         // targetCcProvider.value = "";
-        alert("Belum ada record email untuk provider yang anda pilih!\rLanjutkan?")
+        // alert("Belum ada record email untuk provider yang anda pilih!\rLanjutkan?")
     }
 }
 
