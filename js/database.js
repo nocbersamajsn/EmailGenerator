@@ -178,11 +178,11 @@ var emailEkskalasi = [
 
     ['Fibernet','Normal',''],
 
-    ['Indosat','Level 1 ( Normal )','nico.enjelit@indosatooredoo.com, noc@jsn.net.id,'],
-    ['Indosat','Level 2 ( 2 Jam )','nico.enjelit@indosatooredoo.com, noc@jsn.net.id, mod.ioch@indosatooredoo.com,'],
-    ['Indosat','Level 3 ( 3 Jam )','nico.enjelit@indosatooredoo.com, noc@jsn.net.id, mod.ioch@indosatooredoo.com, achmad.cholill@indosatooredoo.com,'],
-    ['Indosat','Level 4 ( 4 Jam )','nico.enjelit@indosatooredoo.com, noc@jsn.net.id, mod.ioch@indosatooredoo.com, achmad.cholill@indosatooredoo.com, suhendra@indosatooredoo.com,'],
-    ['Indosat','Level 5 ( 5 Jam )','nico.enjelit@indosatooredoo.com, noc@jsn.net.id, mod.ioch@indosatooredoo.com, achmad.cholill@indosatooredoo.com, suhendra@indosatooredoo.com, yuliadi.syarief@indosatooredoo.com,'],
+    ['Indosat','Level 1 ( Normal )','corporateshiftleader@ioh.co.id, achmad.cholili@ioh.co.id, nico.enjelit@ioh.co.id, mod.ioch@ioh.co.id, ryan.santoso@ioh.co.id, noc.coordinator@ioh.co.id, endang.nuryadi@ioh.co.id, r.herbowo@ioh.co.id,'],
+    ['Indosat','Level 2 ( 2 Jam )','corporateshiftleader@ioh.co.id, achmad.cholili@ioh.co.id, nico.enjelit@ioh.co.id, mod.ioch@ioh.co.id, ryan.santoso@ioh.co.id, noc.coordinator@ioh.co.id, endang.nuryadi@ioh.co.id, r.herbowo@ioh.co.id,'],
+    ['Indosat','Level 3 ( 3 Jam )','corporateshiftleader@ioh.co.id, achmad.cholili@ioh.co.id, nico.enjelit@ioh.co.id, mod.ioch@ioh.co.id, ryan.santoso@ioh.co.id, noc.coordinator@ioh.co.id, endang.nuryadi@ioh.co.id, r.herbowo@ioh.co.id,'],
+    ['Indosat','Level 4 ( 4 Jam )','corporateshiftleader@ioh.co.id, achmad.cholili@ioh.co.id, nico.enjelit@ioh.co.id, mod.ioch@ioh.co.id, ryan.santoso@ioh.co.id, noc.coordinator@ioh.co.id, endang.nuryadi@ioh.co.id, r.herbowo@ioh.co.id,'],
+    ['Indosat','Level 5 ( 5 Jam )','corporateshiftleader@ioh.co.id, achmad.cholili@ioh.co.id, nico.enjelit@ioh.co.id, mod.ioch@ioh.co.id, ryan.santoso@ioh.co.id, noc.coordinator@ioh.co.id, endang.nuryadi@ioh.co.id, r.herbowo@ioh.co.id,'],
 
     ['XL Axiata','Level 1 ( Normal )','asria@xl.co.id, radena@xl.co.id,'],
     ['XL Axiata','Level 2 ( 4 Jam )','asria@xl.co.id, radena@xl.co.id, donnye@xl.co.id, dbhakti2@xl.co.id,'],
