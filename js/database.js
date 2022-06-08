@@ -97,16 +97,16 @@ var dataEmail = [
     ['Indosat','Sulawesi Utara','MANADO','DETH J-S-N MND-ETR 210676','MANADO','300 Mbps','a.anaogi@gmail.com',''],
 
     // Fiberstar
-    ['Fiberstar','Pati','Jontro','CRT2104003077','PATI','13 Gbps','haansiro@gmail.com',''],
+    ['Fiberstar','Pati','Jontro','CRT2104003077','PATI','16 Gbps','haansiro@gmail.com, dhian.daharu@fiberstar.co.id',''],
     ['Fiberstar','Demak','Pop Kudus','CRT2104009744','DEMAK','8 Gbps','kholilur@jsn.net.id, larco.kun@gmail.com',''],
     ['Fiberstar','Ngawi','Ngawi','CRT2009005413','NGAWI','2 Gbps','uudsapto@gmail.com',''],
     ['Fiberstar','Kediri','Kediri','CRT2110002230','KEDIRI','2 Gbps','kangmuzan@gmail.com',''],
     ['Fiberstar','Malang','Senggreng','CRT2111013154','MALANG','2 Gbps','malang@jsn.net.id, rizqi.kuswanto@fiberstar.co.id',''],
     ['Fiberstar','Bali','Gianyar','CRT2104009127','BALI','1 Gbps','w.sujana@jsn.net.id',''],
     ['Fiberstar','Ungaran','Salatiga','CRT2108009824','UNGARAN','500 Mbps','cs.deltamitra@gmail.com',''],
-    ['Fiberstar','Rembang','Rembang','CRT2109008642','REMBANG','2 Gbps','ardibeni28@gmail.com',''],
-    ['Fiberstar','Blora','Kudus','CRT2109008642','KUDUS','1 Gbps','muhsan@jsn.net.id',''],
-    ['Fiberstar','Blora','Cepu','CRT2204006078','CEPU','1 Gbps','muhsan@jsn.net.id',''],
+    ['Fiberstar','Rembang','Rembang','CRT2109008642','REMBANG','2 Gbps','ardibeni28@gmail.com, dhian.daharu@fiberstar.co.id',''],
+    ['Fiberstar','Blora','Kudus','CRT2109008642','KUDUS','1 Gbps','muhsan@jsn.net.id, dhian.daharu@fiberstar.co.id',''],
+    ['Fiberstar','Blora','Cepu','CRT2204006078','CEPU','1 Gbps','muhsan@jsn.net.id, dhian.daharu@fiberstar.co.id',''],
 
     //Xl Axiata
     ['XL Axiata','Demak','Bintoro','004C6714L2','DEMAK','1 Gbps','kholilur@jsn.net.id, larco.kun@gmail.com',''],
@@ -172,7 +172,7 @@ var emailEkskalasi = [
     
     ['Icon Plus','Normal','angelin.filanda@iconpln.co.id, noc@jsn.net.id, ramadhan.yondra@iconpln.co.id,'],
 
-    ['Fiberstar','Normal','hari.pujiharto@fiberstar.co.id, noc@jsn.net.id,'],
+    ['Fiberstar','Normal','hari.pujiharto@fiberstar.co.id, thomas.dragono@fiberstar.co.id, andri.kaiin@fiberstar.co.id, noc@jsn.net.id,'],
 
     ['H3I','Normal','reno.huntoro@three.co.id, noc@jsn.net.id,'],
 
