@@ -89,7 +89,7 @@ var dataEmail = [
     ['Icon Plus','Ponorogo','Kedung Banteng','01000150372 (Metro-E)','Dukuh.kalipucang, RT 01/RW 02, Desa. kedungbanteng, Kec. Sukorejo, Kab. Ponorogo, Jawatimur, Indonesia (1 Gbps) (01000150372)','1 Gbps','jsnponorogo@gmail.com','didikprima15@gmail.com'],
 
     // Indosat Oreedoo
-    ['Indosat','Aceh','BIRUEN','DETH_MTX09482393_JKS_8535','BIRUEN','500 Mbps','waxherman@jsn.net.id',''],
+    //['Indosat','Aceh','BIRUEN','DETH_MTX09482393_JKS_8535','BIRUEN','500 Mbps','waxherman@jsn.net.id',''],
     ['Indosat','Aceh','BIRUEN','DETH J-S-N BRN-ETR 210317','BIRUEN','1 Gbps','waxherman@jsn.net.id',''],
     ['Indosat','Kutai Timur','SANGATTA','DETH J-S-N SAA-ETR 220072','SANGATTA','500 Mbps','neozack24@gmail.com',''],
     ['Indosat','Kutai Timur','PINRANG','DETH J-S-N PIN-ETR 210247','PINRANG','1 Gbps','neozack24@gmail.com'],
