@@ -101,7 +101,7 @@ var dataEmail = [
     ['Fiberstar','Demak','Pop Kudus','CRT2104009744','DEMAK','8 Gbps','kholilur@jsn.net.id, larco.kun@gmail.com',''],
     ['Fiberstar','Ngawi','Ngawi','CRT2009005413','NGAWI','2 Gbps','uudsapto@gmail.com',''],
     ['Fiberstar','Kediri','Kediri','CRT2110002230','KEDIRI','2 Gbps','kangmuzan@gmail.com',''],
-    ['Fiberstar','Malang','Senggreng','CRT2111013154','MALANG','2 Gbps','malang@jsn.net.id, rizqi.kuswanto@fiberstar.co.id',''],
+    ['Fiberstar','Malang','Senggreng','CRT2111013154','MALANG','16 Gbps','malang@jsn.net.id, rizqi.kuswanto@fiberstar.co.id',''],
     ['Fiberstar','Bali','Gianyar','CRT2104009127','BALI','1 Gbps','w.sujana@jsn.net.id',''],
     ['Fiberstar','Ungaran','Salatiga','CRT2108009824','UNGARAN','500 Mbps','cs.deltamitra@gmail.com',''],
     ['Fiberstar','Rembang','Rembang','CRT2109008642','REMBANG','2 Gbps','ardibeni28@gmail.com, dhian.daharu@fiberstar.co.id',''],
