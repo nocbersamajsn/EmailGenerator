@@ -105,7 +105,7 @@ var dataEmail = [
     ['Fiberstar','Bali','Gianyar','CRT2104009127','BALI','1 Gbps','w.sujana@jsn.net.id',''],
     ['Fiberstar','Ungaran','Salatiga','CRT2108009824','UNGARAN','500 Mbps','cs.deltamitra@gmail.com',''],
     ['Fiberstar','Rembang','Rembang','CRT2109008642','REMBANG','2 Gbps','ardibeni28@gmail.com, dhian.daharu@fiberstar.co.id',''],
-    ['Fiberstar','Blora','Kudus','CRT2109008642','KUDUS','1 Gbps','muhsan@jsn.net.id, dhian.daharu@fiberstar.co.id',''],
+    ['Fiberstar','Blora','Kudus','CRT2203003116','KUDUS','1 Gbps','muhsan@jsn.net.id, dhian.daharu@fiberstar.co.id',''],
     ['Fiberstar','Blora','Cepu','CRT2204006078','CEPU','1 Gbps','muhsan@jsn.net.id, dhian.daharu@fiberstar.co.id',''],
 
     //Xl Axiata
