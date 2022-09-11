@@ -86,7 +86,7 @@ var dataEmail = [
     ['Icon Plus','Malang','Bantur','01000143366 (Metro-E)','Balewarti. rejosari, Bantur, Malang, Kab.Malang, Jawa Timur 65179, Indonesia (1 Gbps) (01000143366)','1 Gbps','malang@jsn.net.id',''],
     ['Icon Plus','Malang','Turen','01000143381 (IP VPN)','Sidorejo RT 32 RW 12 Pagelaran, Sumbersoko, Kemulan, Kec.Turen, Malang, Kab.Malang, Jawa Timur 65174, Indonesia (50Mbps) (01000143381)','50 Mbps','malang@jsn.net.id',''],
     ['Icon Plus','Malang','Sendangbiru','01000194271 (Metro-E)','Sendangbiru RT 6 RW 2 Tambakrejo, Sumbermanjing Wetan, Malang, Jawa Timur (1 Gbps) (01000194271)','1 Gbps','malang@jsn.net.id',''],
-    ['Icon Plus','Ponorogo','Kauman','01000142923 (Metro-E)','Jl. Sidotopo 9A Kauman, Ponorogo, Jawa Timur, Yagan, Carat, Kabupaten Ponorogo, Jawa Timur, Indonesia (1 Gbps) (01000142923)','1 Gbps','jsnponorogo@gmail.com',''],
+    ['Icon Plus','Ponorogo','Kauman','01000300145 (Metro-E)','Jl. Sidotopo 9A Kauman, Ponorogo, Jawa Timur, Yagan, Carat, Kabupaten Ponorogo, Jawa Timur, Indonesia (5 Gbps) (01000300145)','5 Gbps','jsnponorogo@gmail.com',''],
     ['Icon Plus','Ponorogo','Kedung Banteng','01000150372 (Metro-E)','Dukuh.kalipucang, RT 01/RW 02, Desa. kedungbanteng, Kec. Sukorejo, Kab. Ponorogo, Jawatimur, Indonesia (1 Gbps) (01000150372)','1 Gbps','jsnponorogo@gmail.com','didikprima15@gmail.com'],
 
     // Indosat Oreedoo
