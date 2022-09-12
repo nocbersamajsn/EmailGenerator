@@ -98,7 +98,7 @@ var dataEmail = [
     ['Indosat','Sulawesi Utara','MANADO','DETH J-S-N MND-ETR 210676','MANADO','300 Mbps','a.anaogi@gmail.com',''],
 
     // Fiberstar
-    ['Fiberstar','Pati','Jontro','CRT2104003077','PATI','16 Gbps','haansiro@gmail.com, dhian.daharu@fiberstar.co.id',''],
+    ['Fiberstar','Pati','Jontro','CRT2104003077','PATI','10 Gbps','haansiro@gmail.com, dhian.daharu@fiberstar.co.id',''],
     ['Fiberstar','Demak','Pop Kudus','CRT2104009744','DEMAK','8 Gbps','kholilur@jsn.net.id, larco.kun@gmail.com',''],
     ['Fiberstar','Ngawi','Ngawi','CRT2009005413','NGAWI','2 Gbps','uudsapto@gmail.com',''],
     ['Fiberstar','Kediri','Kediri','CRT2110002230','KEDIRI','2 Gbps','kangmuzan@gmail.com',''],
