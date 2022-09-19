@@ -68,7 +68,7 @@ var dataEmail = [
     
     // Icon Plus
     ['Icon Plus','Seluma','Kominfo Seluma','01000087777 (IP VPN)','Kominfo Seluma, Talang Saling, Kabupaten Seluma, Bengkulu (100Mbps)(01000087777)','100 Mbps'],
-    ['Icon Plus','Pati','Jontro','01000106666 (Metro-E)','CV. HAANSIRO, RT.4 RW.1 Desa Jontro, Kecamatan Wedarijaksa, Kabupaten Pati, Jawa Tengah (1 Gbps) (01000106666)','1 Gbps','haansiro@gmail.com',''],
+    ['Icon Plus','Pati','Jontro','01000299896 (Metro-E)','CV. HAANSIRO, RT.4 RW.1 Desa Jontro, Kecamatan Wedarijaksa, Kabupaten Pati, Jawa Tengah (10 Gbps) (01000299896)','1 Gbps','haansiro@gmail.com',''],
     ['Icon Plus','Demak','Dempet','01000112405 (Metro-E)','Jl. Gajah-Dempet, RT.07/RW.04, Dempet, Kecamatan Dempet, Kabupaten Demak, Jawa Tengah 59573 (1 Gbps) (01000112405)','1 Gbps','kholilur@jsn.net.id, larco.kun@gmail.com',''],
     ['Icon Plus','Bengkalis','Mandau','01000085551 (Metro-E)','JL. Siak Gg Kuantan Duri-Riau, Kecamatan Mandau, Kabupaten Bengkalis, Riau, Indonesia (10 Mbps) (01000085551)','10 Mbps','wardiyono@rifansi.co.id',''],
     ['Icon Plus','Langkat','Tanjung Pura','01000098443 (Metro-E)','DUSUN 1 PENDIDIKAN DESA SERAPUH ASLI, Kecamatan Tanjung Pura, Kabupaten Langkat, Sumatera Utara, Indonesia, 20853 (1Gbps) (01000098443)','1 Gbps','ayu.novita@iconpln.co.id, andi.fachrizal@iconpln.co.id, hendr499@gmail.com, bsahrizal@gmail.com, victor.yunarto@iconpln.co.id, afira.genubhy@iconpln.co.id',''],
